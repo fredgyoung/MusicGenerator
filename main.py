@@ -22,9 +22,19 @@ def get_duration():
 
 def create_measure():
     chord = get_chord()
-    pitch = get_pitch()
-    duration = get_duration()
+
+    time_remaining = 16
+    notes = []
+
+    while time_remaining > 0:
+        pitch = get_pitch()
+        duration = get_duration()
+
     print(pitch, end = " ")
+
+
+def create_song():
+    pass
 
 
 if __name__ == '__main__':
